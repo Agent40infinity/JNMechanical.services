@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36401.2 d17.14
+VisualStudioVersion = 17.14.36623.8 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JNMechanical.services", "JNMechanical.services.csproj", "{C8BF6783-CA2C-41B9-8D4C-A278852E2D97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jnmechanical.services", "jnmechanical.services.csproj", "{F0F1AFA0-C345-4C0F-87D4-9B59C520EFE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C8BF6783-CA2C-41B9-8D4C-A278852E2D97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8BF6783-CA2C-41B9-8D4C-A278852E2D97}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8BF6783-CA2C-41B9-8D4C-A278852E2D97}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8BF6783-CA2C-41B9-8D4C-A278852E2D97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0F1AFA0-C345-4C0F-87D4-9B59C520EFE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0F1AFA0-C345-4C0F-87D4-9B59C520EFE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0F1AFA0-C345-4C0F-87D4-9B59C520EFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0F1AFA0-C345-4C0F-87D4-9B59C520EFE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9B92A36B-6AED-4976-BC11-40CC10CB0B92}
+		SolutionGuid = {0ADABA93-A346-49C1-AE06-4F2774582A13}
 	EndGlobalSection
 EndGlobal
