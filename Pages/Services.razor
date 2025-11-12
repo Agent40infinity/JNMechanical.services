@@ -1,0 +1,17 @@
+﻿@page "/services"
+@inject IJSRuntime js
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !Navigation.visited)
+        {
+            Console.WriteLine("Rendered");
+            await js.InvokeVoidAsync("Rendered", Navigation.duration);
+
+            Navigation.visited = true;
+        }
+
+        await base.OnAfterRenderAsync(firstRender);
+    }
+}

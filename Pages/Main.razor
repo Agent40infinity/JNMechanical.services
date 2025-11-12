@@ -1,6 +1,34 @@
 ﻿@page "/"
 @inject IJSRuntime js
 
-@code {
+<p class="title">JNMechanical</p>
+<p class="sub-title">Mobile Mechanic Services</p>
+<p class="description"></p>
+<p class="description"></p>
+<div class="prompt">
+    <a class="nav-item">
+        <div class="prompt-button">
+            <p class="prompt-title">Inquiry</p>
+        </div>
+    </a>
+    <a class="nav-item">
+        <div class="prompt-button">
+            <p class="prompt-title">Services</p>
+        </div>
+    </a>
+</div>
 
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !Navigation.visited)
+        {
+            Console.WriteLine("Rendered");
+            await js.InvokeVoidAsync("Rendered", Navigation.duration);
+
+            Navigation.visited = true;
+        }
+
+        await base.OnAfterRenderAsync(firstRender);
+    }
 }

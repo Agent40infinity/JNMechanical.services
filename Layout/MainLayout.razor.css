@@ -1,0 +1,21 @@
+﻿navbar {
+    position: static;
+    height: 50px;
+    background-color: rgba(0, 0, 0);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    opacity: 0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav-item {
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}

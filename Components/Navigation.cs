@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Components;
-using Microsoft.JSInterop;
+﻿using Microsoft.JSInterop;
+using Microsoft.AspNetCore.Components;
 
-namespace aiden.fyi.Components
+namespace jnmechanical.services.Components
 {
     public static class Navigation
     {
+        public static bool visited = false;
+
         public const int duration = 1000;
 
         public static async Task NavigateTo(NavigationManager navManager, IJSRuntime js, string page)
