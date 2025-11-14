@@ -1,5 +1,5 @@
-﻿using Microsoft.JSInterop;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
 
 namespace jnmechanical.services.Components
 {
