@@ -87,6 +87,19 @@ a, .btn-link {
     z-index: 9;
 }
 
+.logo {
+    height: auto;
+    width: 18%;
+    position: fixed;
+    top: 10%;
+}
+
+@media (max-width: 1550px) {
+    .logo {
+        width: 280px;
+    }
+}
+
 code {
     color: #c02d76;
 }
