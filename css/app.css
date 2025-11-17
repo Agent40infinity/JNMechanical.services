@@ -10,17 +10,17 @@
 
 @font-face {
     font-family: 'Helvetica N Roman';
-    src: url('../fonts/HelveticaNeueRoman.otf') format('opentype');
+    src: url('../fonts/HelveticaNeueRoman.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Helvetica N Medium';
-    src: url('../fonts/HelveticaNeueMedium.otf') format('opentype');
+    src: url('../fonts/HelveticaNeueMedium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Helvetica N Bold';
-    src: url('../fonts/HelveticaNeueBold.otf') format('opentype');
+    src: url('../fonts/HelveticaNeueBold.ttf') format('truetype');
 }
 
 * {
@@ -30,6 +30,7 @@
 }
 
 html {
+    text-align: center;
     height: 100%;
     background-color: var(--main-color);
 }
@@ -40,6 +41,10 @@ a {
 
 a:hover {
     cursor: pointer;
+}
+
+.hidden {
+    opacity: 0;
 }
 
 h1:focus {

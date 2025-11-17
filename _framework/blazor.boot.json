@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "jnmechanical.services",
   "resources": {
-    "hash": "sha256-J7Wzd8VYPK2UUlvG6CtIEFZme7/GMuzhSUTyg6XJiTg=",
+    "hash": "sha256-R7mijdDcV5iCaTpCfY0jTb+vMVzzV4pPy63ms2ZejmU=",
     "jsModuleNative": {
       "dotnet.native.8.0.22.te9w5f1aae.js": "sha256-vtotCeXt2UD6oc459laJT32vBgigZ+eLoUmdeFkvYDk="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "jnmechanical.services.wasm": "sha256-WPN0HEHRDPMRU+SPVK8JgFeGykMbw83FkP4NCPiPdv0=",
+      "jnmechanical.services.wasm": "sha256-Y6M2jjexur/S+8e8P0DifxrieVKonmmbKgdYmAgebFI=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-1MZWnT42wmDyFSAQ9IU/g/w4UT1rDdMB5XRItmxqShc=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-o3dUFaYZ86Ri9/f+gxNOJf4LxhqxORvIZM29feN1GHk=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-kZSJV9ON9UL924dyAnAeoFHZXExv5A/OCxTHlMc+3fQ=",

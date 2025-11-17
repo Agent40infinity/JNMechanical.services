@@ -37,12 +37,75 @@
     color: var(--secondary-color);
 }
 
+.nav-item:not(.hidden):hover .expandable[b-88opp1dswv] {
+    transition: all 0.7s;
+    width: 100%;
+    opacity: 1;
+}
+
+.expandable[b-88opp1dswv] {
+    margin: auto;
+    opacity: 0;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    width: 0%;
+    border-bottom: solid 1px var(--alt-color);
+}
+
 .mini-logo[b-88opp1dswv] {
     height: auto;
     width: 150px;
 }
-
-hr[b-88opp1dswv] {
+/* /Pages/Inquiry.razor.rz.scp.css */
+body[b-xlfo1fj4xs] {
+}
+/* /Pages/Main.razor.rz.scp.css */
+.banner[b-4c3x4oz91s] {
+    position: relative;
+    height: 250px;
     width: 100%;
-    border-bottom: solid 1px black;
+}
+
+.banner img[b-4c3x4oz91s] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-info[b-4c3x4oz91s] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30%;
+    background-color: var(--alt-color);
+    align-content: center;
+}
+
+.info-contents[b-4c3x4oz91s] {
+    padding: 40px;
+}
+
+.title[b-4c3x4oz91s] {
+    margin-top: 40px;
+    font-family: var(--font-bold);
+    font-size: 45px;
+    color: black;
+}
+
+.sub-title[b-4c3x4oz91s] {
+    margin-top: 3px;
+    font-family: var(--font-medium);
+    font-size: 30px;
+    color: var(--alt-color);
+}
+
+.description[b-4c3x4oz91s] {
+    font-family: var(--font-bold);
+    font-size: 30px;
+    color: var(--main-color);
+    text-align: left;
+}
+/* /Pages/Services.razor.rz.scp.css */
+body[b-oc11ih14og] {
 }
