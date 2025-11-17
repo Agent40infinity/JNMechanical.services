@@ -1,22 +1,48 @@
 /* /Layout/MainLayout.razor.rz.scp.css */
-navbar[b-v9v05zyh2q] {
+.navbar[b-88opp1dswv] {
     position: static;
-    height: 50px;
-    background-color: rgba(0, 0, 0);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    opacity: 0;
+    width: 100%;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.nav-menu[b-v9v05zyh2q] {
+.nav-menu[b-88opp1dswv] {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     z-index: 10;
 }
 
-.nav-item[b-v9v05zyh2q] {
+.nav-item[b-88opp1dswv] {
+    font-family: var(--font-medium);
+    font-size: 17px;
     text-align: center;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+}
+
+.contact[b-88opp1dswv] {
+    font-family: var(--font-regular);
+    color: var(--alt-color);
+    position: fixed;
+    top: 45px;
+    right: 30px;
+}
+
+.nav-item:not(.nav-logo):hover[b-88opp1dswv] {
+    transition: all 0.2s;
+    transform: scale(1.1);
+    color: var(--secondary-color);
+}
+
+.mini-logo[b-88opp1dswv] {
+    height: auto;
+    width: 150px;
+}
+
+hr[b-88opp1dswv] {
+    width: 100%;
+    border-bottom: solid 1px black;
 }

@@ -3,10 +3,43 @@
     --secondary-color: #FF7A30;
     --alt-color: #465C88;
     --text-color: #000000;
+    --font-regular: 'Helvetica N Roman';
+    --font-medium: 'Helvetica N Medium';
+    --font-bold: 'Helvetica N Bold';
 }
 
-body {
-    background-color: white;
+@font-face {
+    font-family: 'Helvetica N Roman';
+    src: url('../fonts/HelveticaNeueRoman.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Helvetica N Medium';
+    src: url('../fonts/HelveticaNeueMedium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Helvetica N Bold';
+    src: url('../fonts/HelveticaNeueBold.otf') format('opentype');
+}
+
+* {
+    font-family: var(--font-regular);
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+    background-color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 h1:focus {
