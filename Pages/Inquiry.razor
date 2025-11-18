@@ -2,7 +2,42 @@
 @inject HttpClient http
 @inject IJSRuntime js
 
+<div class="form-container">
+    <div class="form-entry">
+        <p class="form-title">First Name</p>
+        <InputText class="form-input" @bind-Value="form.firstName" />
+    </div>
+    <div class="form-entry">
+        <p class="form-title">Last Name</p>
+        <InputText class="form-input" @bind-Value="form.lastName" />
+    </div>
+</div>
+<div class="form-container">
+    <div class="form-entry">
+        <p class="form-title">Email</p>
+        <InputText class="form-input" @bind-Value="form.email" />
+    </div>
+    <div class="form-entry">
+        <p class="form-title">Phone</p>
+        <InputText class="form-input" @bind-Value="form.phone" />
+    </div>
+</div>
+<div class="form-entry">
+    <p class="form-title">Inquiry</p>
+    <InputText class="form-area" @bind-Value="form.inquiry" />
+</div>
+<div class="form-rego">
+    <p class="rego-title">Rego</p>
+    <div class="rego-container">
+        <img class="rego-img" />
+        <InputText class="rego-text" @bind-Value="form.rego" />
+    </div>
+    <a class="rego-submit">Search</a>
+</div>
+
 @code {
+    public InquiryForm form = new InquiryForm();
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender && !Navigation.visited)
