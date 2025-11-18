@@ -1,6 +1,20 @@
 ﻿@page "/services"
 @inject IJSRuntime js
 
+<div class="service-container">
+    @foreach (var service in Data.Services)
+    {
+        <a class="service-entry">
+            <img class="service-icon" />
+            <p class="service-title">@service.Key</p>
+            @foreach (var point in service.Value)
+            { 
+                <p class="service-attribute">- @point</p>
+            }
+        </a>
+    }
+</div>
+
 @code {
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {

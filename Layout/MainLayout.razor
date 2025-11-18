@@ -1,13 +1,35 @@
 ﻿@inherits LayoutComponentBase
 
-<body>
-    <div class="navbar">
-        <div class="nav-menu">
-            <a class="nav-item"><hr class="hidden"/>INQUIRY<hr class="expandable"/></a>
-            <a class="nav-item nav-logo"><img class="mini-logo" src="../img/logo.png" /></a>
-            <a class="nav-item"><hr class="hidden"/>SERVICES<hr class="expandable"/></a>
-        </div>
-        <a class="nav-item contact">0452 045 965</a>
+@inject IJSRuntime js
+@inject HttpClient http
+@inject NavigationManager NavManager
+
+<header class="navbar">
+    <div class="nav-menu">
+        <a class="nav-item" @onclick="@(() => Navigation.NavigateTo(NavManager, js, "/inquiry"))">
+            <hr class="hidden" />INQUIRY<hr class="expandable" />
+        </a>
+        <a class="nav-item nav-logo" @onclick="@(() => Navigation.NavigateTo(NavManager, js, "/"))">
+            <img class="mini-logo" src="../img/logo.png" />
+        </a>
+        <a class="nav-item" @onclick="@(() => Navigation.NavigateTo(NavManager, js, "/services"))">
+            <hr class="hidden" />SERVICES<hr class="expandable" />
+        </a>
     </div>
+    <a class="nav-item contact" href="tel:0462045965">0452 045 965</a>
+</header>
+<body class="body">
     @Body
 </body>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var services = await http.GetFromJsonAsync<Dictionary<string, List<string>>>("json/services.json");
+
+        if (services != null)
+        {
+            Data.Services = services;    
+        }
+    }
+}

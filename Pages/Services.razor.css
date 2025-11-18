@@ -1,2 +1,23 @@
-﻿body {
+﻿.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 950px;
+    margin: auto;
+}
+
+.service-entry {
+    margin: 20px;
+    width: 200px;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+.service-title {
+    font-size: 20px;
+}
+
+.service-attribute {
+    font-size: 14px;
 }
